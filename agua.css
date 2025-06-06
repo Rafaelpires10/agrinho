@@ -1,20 +1,94 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+/* Estilo global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-.cabecalho{
-    color: rgb(229, 255, 0);
-    background-color: rgb(3, 48, 248);
-    text-align: center;
-    padding: 30px;
+/* Cabeçalho */
+.cabecalho {
+    background-color: #198754; /* verde Bootstrap */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-.cabecalho h3{
-    color: rgb(206, 206, 8);
+/* Navbar */
+.navbar {
+    background-color: #ffc107 !important; /* amarelo Bootstrap */
 }
 
-p .alinha{
-    text-align: right;
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #004d1a !important;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Seções */
+.container h2,
+.container h3,
+.container h4 {
+    color: #146c43;
+}
+
+/* Citação */
+blockquote {
+    background-color: #eafaf1;
+    border-left: 5px solid #198754;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Lista de curiosidades */
+ul {
+    padding-left: 1.2rem;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Botão "voltar ao topo" */
+.btn-success {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #146c43;
+}
+
+/* Rodapé */
+footer {
+    background-color: #198754;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsivo extra */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.8rem;
+    }
+
+    .cabecalho h3 {
+        font-size: 1.2rem;
+    }
 }

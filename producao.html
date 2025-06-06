@@ -1,50 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pzjw8f+ua7Kw1TIq0n1oa1tba0EzzfXqTJl86/jr59t3FjQ42r+zLfXovzN+SHK7" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Produção Rural - Agrinho 2025</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <!--Apresentação do tema-->
-    <section class="cabecalho">
-        <h1>AGRINHO 2025</h1>
-        <h3>Festejando Conexão Campo Cidade</h3>
-    </section>
+  <!-- Cabeçalho -->
+  <section class="cabecalho bg-success text-white py-4 text-center">
+    <h1>AGRINHO 2025</h1>
+    <h3>Festejando a Conexão Campo-Cidade</h3>
+  </section>
 
-    <!--cabeçalho do site-->
-    <nav class="navbar navbar-expand-lg bg-warning">
-        <div class="container-fluid ">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.html">Página Inicial |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="energia.html">Energia Rural |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="agua.html">Acessibilidade a Água |</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="producao.html">Produção</a>
-                    </li>
-                </ul>
-            </div>
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg bg-warning">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Página Inicial |</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="energia.html">Energia Rural |</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="agua.html">Água |</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" href="producao.html">Produção</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <div class="container py-5 text-center">
+    <!-- Imagens laterais + texto -->
+    <div class="row align-items-center mb-5">
+      <!-- Imagem Esquerda -->
+      <div class="col-md-3 mb-3 mb-md-0">
+        <img src="plantas.jpg" alt="Paisagem rural" class="img-fluid rounded shadow-sm" />
+      </div>
+
+      <!-- Texto Central -->
+      <div class="col-md-6">
+        <h2>Produção Rural: a força do campo</h2>
+        <p>
+          A produção rural é essencial para garantir alimentos de qualidade e movimentar a economia do país.
+          Ela envolve agricultura, pecuária, hortaliças e fruticultura.
+        </p>
+        <p>
+          Agricultores trabalham com dedicação para cultivar a terra e criar animais, levando comida à mesa das
+          famílias brasileiras.
+        </p>
+      </div>
+
+      <!-- Imagem Direita -->
+      <div class="col-md-3 mb-3 mb-md-0">
+        <img src="gado.jpg" alt="Trator em plantação" class="img-fluid rounded shadow-sm" />
+      </div>
+    </div>
+
+    <!-- Texto adicional -->
+    <div class="row mb-5">
+      <div class="col">
+        <h3 class="mb-4">Sustentabilidade na produção rural</h3>
+        <p>
+          A sustentabilidade é um dos maiores desafios da produção rural. Práticas agrícolas que respeitam o solo,
+          a água e a biodiversidade garantem a continuidade da produção para as próximas gerações.
+        </p>
+        <p>
+          Investir em tecnologias verdes, como plantio direto, manejo integrado de pragas e uso racional da água,
+          além de valorizar a agricultura familiar, contribui para um desenvolvimento equilibrado e saudável.
+        </p>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row text-center">
+      <h3 class="pb-4">Áreas importantes da produção rural</h3>
+
+      <div class="col-md-4 d-flex">
+        <div class="card w-100 d-flex flex-column">
+          <img src="agricultura.jpg" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;"
+            alt="Plantação de soja" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Agricultura</h5>
+            <p class="card-text flex-grow-1">
+              O cultivo de grãos, hortaliças e frutas é a base da alimentação mundial e um importante motor da economia
+              rural.
+            </p>
+          </div>
         </div>
-    </nav>
+      </div>
 
+      <div class="col-md-4 d-flex">
+        <div class="card w-100 d-flex flex-column">
+          <img src="gado2.jpg" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;"
+            alt="Rebanho bovino" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Pecuária</h5>
+            <p class="card-text flex-grow-1">
+              A criação de animais fornece carne, leite e outros produtos, sendo fundamental para a diversificação da
+              renda rural.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 d-flex">
+        <div class="card w-100 d-flex flex-column">
+          <img src="industralizacao.jpg" class="card-img-top img-fluid" style="height: 180px; object-fit: cover;"
+            alt="Indústria rural" />
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Industrialização</h5>
+            <p class="card-text flex-grow-1">
+              Agregar valor aos produtos rurais por meio de processos industriais fortalece a economia e gera empregos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="footer bg-light text-center py-3 mt-5">
+    <p>Todos os direitos reservados - Agrinho 2025 | Festejando a conexão campo e cidade</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+  

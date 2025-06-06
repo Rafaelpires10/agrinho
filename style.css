@@ -1,42 +1,86 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.cabecalho{
-    color: rgb(229, 255, 0);
-    background-color: rgb(3, 48, 248);
+/* Cabeçalho */
+.cabecalho {
+    background-color: #2E7D32; /* Verde escuro */
+    color: #fff;
     text-align: center;
-    padding: 30px;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 5px solid #1B5E20; /* Um tom mais escuro para contraste */
 }
 
-.cabecalho h3{
-    color: rgb(206, 206, 8);
+.cabecalho h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-p .alinha{
-    text-align: right;
-}
-.img-agro{
-    width: 300px;
-}
-
-.br-3{
-    border-radius: 15px;
+.cabecalho h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #C8E6C9; /* Verde claro suave para subtítulo */
 }
 
-.img-card{
-    max-height: 250px;
+/* Parágrafo justificado na seção principal */
+.alinha {
+   
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    backface-visibility: hidden;
 }
 
-.img-slide{
-    max-height: 400px;
+/* Cards */
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.footer{
-    background-color: black;
-    color: white;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* Card Titles */
+.card-title {
+    font-weight: 600;
+    color: #2E7D32;
+}
+
+/* Card Text */
+.card-text {
+    text-align: justify;
+    color: #444;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #2E7D32;
+    border-color: #2E7D32;
+}
+
+.btn-primary:hover {
+    background-color: #1B5E20;
+    border-color: #1B5E20;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
     text-align: center;
-    padding: 5px;
+    padding: 15px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Responsividade extra para os cards */
+@media (max-width: 767px) {
+    .card-body {
+        padding: 1rem;
+    }
+    .card-img-top {
+        height: 160px !important;
+    }
 }
